@@ -1,0 +1,118 @@
+:root{
+    --bluegrad:radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.price-plan{
+    margin: auto;
+    display: flex;
+    width: 70%;
+    height: 100%;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: space-around;
+}
+.price-box{
+    color: rgb(82, 82, 116);
+    width: 31%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* background-color: rgb(200, 200, 20); */
+}
+.title{
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.big{
+    font-size: 4rem;
+}
+.small{
+    font-size: 2rem;
+}
+.para{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2rem;
+}
+.end{
+    font-size: 1.1rem;
+    margin: auto;
+    width: 80%;
+    border: none;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    color: white;
+    border-radius: 4px;
+    /* background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% ); */
+    background-image: var(--bluegrad);
+}
+.hr{
+    width: 40%;
+    height: 2px;
+    background-color: aqua;
+    margin: auto;
+}
+.active{
+    color: white;
+    background-image: var(--bluegrad);
+    transform: scale(1.1);
+
+}
+.top-head .title{
+    color: rgb(9, 90, 122);
+}
+.top-head .para{
+    color: rgb(9, 90, 122);
+
+}
+.flex{
+    display: flex;
+}
+
+.top-head{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.toggle{
+    width: 70px;
+    border-radius: 14px;
+    margin: 0 10px;
+    background-image: var(--bluegrad);
+}
+.togdiv{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+}
+@media (max-width:600px){
+    .price-plan{
+        flex-direction: column;
+        margin-top: 40px;
+        display: block;
+    }
+    .price-box{
+        width: 100%;
+        /* margin: 20px; */
+    }
+    .top-head{
+        margin-bottom: 80px;
+        margin-top: 80px;
+    }
+    .container{
+        justify-content: space-between;
+        flex-direction: column  ;
+    }
+}
